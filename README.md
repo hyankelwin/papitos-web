@@ -1,6 +1,6 @@
 <h1 align="center">
 <br>
-  <img src="imagens/logo2.png" alt="Marvel" width="120">
+  <img src="imagens/logo2.png" alt="papitos" width="120">
 <br>
 <br>
 </h1>
