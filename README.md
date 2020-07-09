@@ -1,16 +1,15 @@
 <h1 align="center">
 <br>
-  <img src="https://logodownload.org/wp-content/uploads/2017/05/marvel-logo.png" alt="Marvel" width="120">
+  <img src="imagens/logo2.png" alt="Marvel" width="120">
 <br>
 <br>
 </h1>
 
 <p align="center">
-  <img src="imagens/screenshot_1.jpg" width="150"/>
-  <img src="imagens/screenshot_2.jpg" width="150"/>
-  <img src="imagens/screenshot_3.jpg" width="150"/>
-  <img src="imagens/screenshot_4.jpg" width="150"/>
-  <img src="imagens/screenshot_5.jpg" width="150"/>
+  <img src="imagens/screenshot_1.jpg" />
+  <img src="imagens/screenshot_2.jpg" />
+  <img src="imagens/screenshot_3.jpg" />
+  <img src="imagens/screenshot_4.jpg" />
 </p>
 
 ## About
@@ -34,4 +33,4 @@ No installation or configuration is required to be able to use the papitos, just
 git clone https://github.com/hyankelwin/papitos-web.git
 ```
 
-E pronto basta rodar o arquivo **index.html** desfrutar da interface :)
+Ready just run the file **index.html** enjoy the interface :)
