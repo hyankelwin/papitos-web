@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE" />
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+       <title>PAPITO'S</title>
+       <link href="css/style.css" rel="stylesheet"/>
+    </head>
+    <body>
+        <header class="main-header">
+        <i class="ancora" id="header"></i>
+        <nav class="nav-menu">
+            <ul class="list">
+                <li class="navegation"><a class="navegation-list" href="#header">Inicio</a></li>
+                <li class="navegation"><a class="navegation-list" href="#lugar">O Lugar</a></li>
+                <li class="navegation"><a class="navegation-list" href="#drinks">Nossos Drinks</a></li>
+                <li class="navegation"><a class="navegation-list" href="#sugestoes">Área Sugestões</a></li>
+                <li class="navegation"><a class="navegation-list" href="#footer">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <script>
+        window.onload = function() {
+            document.getElementById("myVideo").play();
+        };
+        var flagSound = true;
+        function verifySound(typeIcon) {
+            if (flagSound == true) {
+                flagSound = false;
+                var divIcon = document.getElementById("divIcon");
+                divIcon.innerHTML = "<i onclick='verifySound(this)' class='fas fa-volume-mute my-float'></i>";
+                playAudio()
+            }else {
+                flagSound = true;
+                var divIcon = document.getElementById("divIcon");
+                divIcon.innerHTML = "<i onclick='verifySound(this)' class='fas fa-play my-float'></i>";
+                pauseAudio()
+            }
+        }
+        
+        function playAudio() { 
+            var efect = document.getElementById("soundEffect"); 
+            var jazz = document.getElementById("soundJazz");
+            setTimeout(function(){
+                playVideo();
+            }, 1100);
+            efect.play();
+            jazz.play();
+        } 
+
+        function pauseAudio() { 
+            var efect = document.getElementById("soundEffect"); 
+            var jazz = document.getElementById("soundJazz");
+            efect.pause();
+            jazz.pause(); 
+        } 
+
+        function playVideo() {
+            var video = document.getElementById("myVideo")
+            video.pause();
+            video.currentTime = 0;
+            video.play();
+        }
+    </script>
+    <a href="#" class="float">
+        <div id="divIcon"><i onclick="verifySound(this)" class="fas fa-play my-float"></i></div>
+    </a>
+
+    <div class="pRelativo">
+        <video class="header-vidio" id="myVideo" loop muted>
+            <source src="videos/copo_cerveja.mp4" type="video/mp4">
+        </video>
+        <img class="logo" src="imagens/logo2.png"/ >
+        
+        <audio id="soundEffect" class="audio-header">
+            <source src="music/Efeito Sonoro - Enchendo Copo Cerveja.mp3" type="audio/mpeg">
+        </audio>
+        
+        <audio id="soundJazz" class="audio-heade2">
+            <source src="music/musicajazz.mp3" type="audio/mpeg">
+        </audio>
+
+    </div>
+    <section class=" lugar section-backgound">
+        <i class="ancora" id="lugar"></i>
+        <div class="section-container">
+            <h1 class="section-title">O Lugar</h1>
+            <p class="section-text">"O Papo do Universitário"  Com uma nova opção de entreterimento em Franca, o Papito's é um local construido pensando em reunir tudo em um só lugar. Qualidade nas bebidas,nas porções e no atendimento. Ambiente agradável para você reunir a família os amigos.</p>
+            <p class="section-text">O Papito's Bar é um tradicional ponto de encontro dos universitários, pelo o fato da gastronomia e uma otima qualidade em nossos pratos. Afinal" Bons amigos merecem esse cuidado. "</p>
+        </div>
+    </section>
+    
+    <section class="drinks section-backgound">
+         <i class="ancora" id="drinks"></i>
+        <div class="section-container">
+            <h1 class="section-title">Nossos Drinks</h1>
+            <img class="caneca" src="imagens/caneca.png" width="150" height="150"/>
+            <img class="caneca" src="imagens/caipirinha.png"  width="150" height="150"/>
+            <img class="caneca" src="imagens/coca.png"  width="150" height="150"/>
+            <img class="caneca" src="imagens/morango.png"  width="150" height="150"/>
+            <img class="caneca" src="imagens/maca.png"  width="150" height="150"/>
+            <img class="caneca" src="imagens/caixa.png"  width="150" height="150"/>
+            <img class="caneca" src="imagens/goiaba.png"  width="150" height="150"/>
+            <img class="caneca" src="imagens/vinho2.png"  width="150" height="150"/>
+            <img class="caneca" src="imagens/detox02.png"  width="150" height="150"/>
+            <img class="caneca" src="imagens/whiskey.png"  width="150" height="150"/>
+            <img class="caneca" src="imagens/absolute.png"  width="150" height="150"/>
+            <img class="caneca" src="imagens/campari.png"  width="150" height="150"/>
+            <img class="caneca" src="imagens/cachaca1.png"  width="150" height="150"/>
+            <img class="caneca" src="imagens/51.png"  width="150" height="150"/>
+            <img class="caneca" src="imagens/batida.png"  width="150" height="150"/>
+            <img class="caneca" src="imagens/doce.png"  width="150" height="150"/>
+        </div>
+    </section>
+
+    <section class="sugestoes section-backgound">
+        <i class="ancora" id="sugestoes"></i>
+        <div class="section-container1">
+            <h1 class="section-title">Área Sugestões</h1>
+            <form class="form-input" method="POST" action="#">
+            <div class="centra-lize back-camadas" >
+                <input type="text" name="nome" id="nome" placeholder="Nome"/>
+                <input type="text" name="email" id="email" placeholder="E-mail"/>
+                <textarea name="sugestao" id="sugestao" placeholder="Deixe Sua Sugestão"></textarea>
+                <input type="submit" name="enviar" id="enviar" value="Enviar"/>
+            </div>
+            </form>
+            <h2 class="section-text1"></h2>
+        </div>
+    </section>
+
+    <footer class="main-footer">
+        <i class="ancora" id="footer"></i>
+        <section class="footer-section">
+            <h1>Contato</h1>
+            <p>(xx) xxxx-xxxx</p>
+            <p>papitsobar@hotmail.com</p>
+        </section>
+        <section class="footer-section">
+            <h1>Endereço</h1>
+            <p>Avenida Certrem, 5255</p>
+            <p>Sao Paulo, SP</p>
+        </section>
+        <section class="footer-section">
+            <h1>Desenvolvido</h1>
+            <p>Hyan Kelwin<br></p>
+            <p>hyankelwin@hotmail.com<br>
+            </p>
+        </section>
+    </footer>
+    </body>
+</html>
