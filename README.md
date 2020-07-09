@@ -6,11 +6,11 @@
 </h1>
 
 <p align="center">
-  <img src="images/screenshot_1.jpg" width="150"/>
-  <img src="images/screenshot_2.jpg" width="150"/>
-  <img src="images/screenshot_3.jpg" width="150"/>
-  <img src="images/screenshot_4.jpg" width="150"/>
-  <img src="images/screenshot_5.jpg" width="150"/>
+  <img src="imagens/screenshot_1.jpg" width="150"/>
+  <img src="imagens/screenshot_2.jpg" width="150"/>
+  <img src="imagens/screenshot_3.jpg" width="150"/>
+  <img src="imagens/screenshot_4.jpg" width="150"/>
+  <img src="imagens/screenshot_5.jpg" width="150"/>
 </p>
 
 ## About
@@ -20,8 +20,11 @@ One of the first solutions in what I developed at the beginning of my career, pa
 ## Tecnologics
 
 **- HTML5**
+<br>
 **- CSS3**
+<br>
 **- Javascript**
+<br>
 
 ## Building
 
